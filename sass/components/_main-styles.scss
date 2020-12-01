@@ -55,7 +55,8 @@ ul {
 }
 
 .main-container {
-    width: 1200px;
+    /* max-width: 1200px; */
+    min-width: 450px;
     padding: 0 15px 0 15px;
     margin: 0 auto;
 }

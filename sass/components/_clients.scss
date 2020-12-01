@@ -1,38 +1,38 @@
-    //CLIENTS
-    .clients-block {
-        display: flex;
+//CLIENTS
+.clients-block {
+    /* display: flex;
         justify-content: space-between;
-        margin-bottom: 94px;
+        margin-bottom: 94px; */
+}
+
+.clients-item {
+    /*   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px; */
+    border: $icon-grey-color 1px solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    /* margin-right: 30px; */
+    outline: none;
+    /* &:last-child {
+        margin-right: 0;
+    } */
+    &:hover,
+    &:focus {
+        border-color: $blue-text-color;
     }
-    
-    .clients-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 170px;
-        height: 90px;
-        border: $icon-grey-color 1px solid;
-        box-sizing: border-box;
-        border-radius: 4px;
-        margin-right: 30px;
-        outline: none;
-        &:last-child {
-            margin-right: 0;
-        }
-        &:hover,
-        &:focus {
-            border-color: $blue-text-color;
-        }
-        &:hover .client-image {
-            fill: $blue-text-color;
-        }
-        &:focus .client-image {
-            fill: $blue-text-color;
-        }
+    &:hover .client-image {
+        fill: $blue-text-color;
     }
-    
-    .client-image {
-        display: inline-block;
-        fill: $icon-grey-color;
-        margin: 0;
+    &:focus .client-image {
+        fill: $blue-text-color;
     }
+}
+
+.client-image {
+    display: inline-block;
+    fill: $icon-grey-color;
+    margin: 0;
+}

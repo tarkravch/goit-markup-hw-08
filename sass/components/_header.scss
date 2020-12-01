@@ -1,11 +1,14 @@
 .header-block {
     display: flex;
     align-items: center;
-    height: 80px;
+    justify-content: space-between;
+    /* height: 80px; */
+    max-width: 100%;
+    height: 60px;
     .nav-container {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        margin-right: 305px;
+        margin-right: 305px; */
         .logo-top {
             color: $logo-black-color;
             font-family: "Raleway", sans-serif;
@@ -13,26 +16,31 @@
             font-size: 26px;
             line-height: 1.2;
             letter-spacing: 0.03em;
-            margin-right: 93px;
+            /* margin-right: 93px; */
         }
     }
 }
 
+.burger {
+    display: block;
+    .burger-icon {
+        display: block;
+    }
+    &:hover,
+    &:focus {
+        fill: $blue-text-color;
+        cursor: pointer;
+    }
+}
+
 .menu {
-    display: flex;
+    /*  display: flex;
     align-items: center;
     width: 294px;
     justify-content: space-between;
-    @extend %nav-con-style;
+    @extend %nav-con-style; */
+    display: none;
 }
-
-
-/* .nav-con-style {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-} */
 
 .nav-item {
     color: $nav-and-title-color;
@@ -61,14 +69,15 @@
 }
 
 .contacts {
-    display: flex;
+    /* display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    display: none;
 }
 
 .header-mail-phone {
-    display: flex;
+    /*  display: flex;
     align-items: center;
     margin-right: 30px;
     &:last-child {
@@ -77,10 +86,11 @@
     @extend %nav-con-style;
     .contacts-item-gap {
         display: flex;
-    }
+    } */
 }
 
-.contacts-item {
+
+/* .contacts-item {
     color: $contacts-paragraph-employee-position-color;
     &:hover {
         color: $blue-text-color;
@@ -94,4 +104,4 @@
 
 .smartphone-envelope-icon {
     fill: currentColor;
-}
+} */
