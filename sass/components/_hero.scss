@@ -1,0 +1,66 @@
+//HERO
+.hero {
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url("../img/hero-img.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1170px;
+    height: 600px;
+    margin-bottom: 94px;
+}
+
+.main-title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    width: 696px;
+    padding-bottom: 30px;
+    margin: 0, auto;
+}
+
+.main-title-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: $blue-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    color: $primary-white-color;
+    padding: 10px 32px;
+    border: none;
+    &:hover,
+    &:focus {
+        color: $blue-text-color;
+        background-color: $primary-white-color;
+    }
+}
+
+.secondary-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $nav-and-title-color;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
