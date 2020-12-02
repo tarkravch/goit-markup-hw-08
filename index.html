@@ -19,33 +19,36 @@
                     <div class="logo-top">
                         <a href="./index.html" lang="en"><span class="bluetext">Web</span>Studio</a>
                     </div>
-                    <ul class="menu">
-                        <li><a class="nav-con-style nav-item bluetext current-page" href="#studio">Студия</a></li>
-                        <li><a class="nav-con-style nav-item" href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="nav-con-style nav-item" href="#contact">Контакты</a></li>
-                    </ul>
+                    <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                        <svg class="burger-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-cross" href="./img/sprite/symbol-defs.svg#icon-close_40px"></use>
+                            <use class="icon-menu" href="./img/sprite/symbol-defs.svg#icon-menu_40px"></use>
+                        </svg>
+                    </button>
+                    <div class="menu-container" id="menu-container" data-menu>
+                        <ul class="menu">
+                            <li><a class="nav-con-style nav-item bluetext current-page" href="#studio">Студия</a></li>
+                            <li><a class="nav-con-style nav-item" href="./portfolio.html">Портфолио</a></li>
+                            <li><a class="nav-con-style nav-item" href="#contact">Контакты</a></li>
+                        </ul>
+                        <ul class="contacts">
+                            <li class="header-mail-phone">
+                                <a class="nav-con-style contacts-item contacts-item-gap" href="mailto:info@devstudio.com">
+                                    <svg class="smartphone-envelope-icon" width="16" height="12">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-envelope"></use>
+                                    </svg> info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="header-mail-phone">
+                                <a class="nav-con-style contacts-item contacts-item-gap" href="tel:+380991111111">
+                                    <svg class="smartphone-envelope-icon" width="10" height="16">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-smartphone"></use>
+                                    </svg> +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-                <ul class="contacts">
-                    <li class="header-mail-phone">
-                        <a class="nav-con-style contacts-item contacts-item-gap" href="mailto:info@devstudio.com">
-                            <svg class="smartphone-envelope-icon" width="16" height="12">
-                                <use href="./img/sprite/symbol-defs.svg#icon-envelope"></use>
-                            </svg> info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="header-mail-phone">
-                        <a class="nav-con-style contacts-item contacts-item-gap" href="tel:+380991111111">
-                            <svg class="smartphone-envelope-icon" width="10" height="16">
-                                <use href="./img/sprite/symbol-defs.svg#icon-smartphone"></use>
-                            </svg> +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <svg class="burger-icon" width="40" height="40">
-                        <use href="./img/sprite/symbol-defs.svg#icon-menu_40px"></use>
-                    </svg>
-                </div>
             </div>
         </div>
 
@@ -487,6 +490,7 @@
 
     </div>
     <!-- SCRIPTS -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>

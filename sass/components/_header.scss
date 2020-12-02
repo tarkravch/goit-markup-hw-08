@@ -1,4 +1,5 @@
 .header-block {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,9 +7,11 @@
     width: 100%;
     height: 60px;
     .nav-container {
-        /* display: flex;
+        display: flex;
         align-items: center;
-        margin-right: 305px; */
+        /* justify-content: space-between; */
+        flex-grow: 1;
+        /* margin-right: 305px; */
         .logo-top {
             color: $logo-black-color;
             font-family: "Raleway", sans-serif;
@@ -21,8 +24,10 @@
     }
 }
 
-.burger {
+.menu-button {
     display: block;
+    border: none;
+    background-color: transparent;
     .burger-icon {
         display: block;
     }
@@ -30,7 +35,35 @@
     &:focus {
         fill: $blue-text-color;
         cursor: pointer;
+        outline: none;
     }
+}
+
+.menu-container {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 393px;
+    background-color: $primary-white-color;
+    z-index: 999;
+    text-align: center;
+    &.is-open {
+        display: block;
+    }
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
 }
 
 .menu {
@@ -39,7 +72,13 @@
     width: 294px;
     justify-content: space-between;
     @extend %nav-con-style; */
-    display: none;
+    .contacts {
+        /* display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; */
+        display: block;
+    }
 }
 
 .nav-item {
@@ -68,16 +107,9 @@
     }
 }
 
-.contacts {
-    /* display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center; */
-    display: none;
-}
 
-.header-mail-phone {
-    /*  display: flex;
+/* .header-mail-phone {
+     display: flex;
     align-items: center;
     margin-right: 30px;
     &:last-child {
@@ -86,8 +118,8 @@
     @extend %nav-con-style;
     .contacts-item-gap {
         display: flex;
-    } */
-}
+    }
+} */
 
 
 /* .contacts-item {
