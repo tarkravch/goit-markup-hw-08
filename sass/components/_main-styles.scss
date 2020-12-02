@@ -60,3 +60,16 @@ ul {
     padding: 0 15px 0 15px;
     margin: 0 auto;
 }
+
+.secondary-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $nav-and-title-color;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    /* margin-bottom: 50px; */
+    /* padding-top: 94px; */
+}

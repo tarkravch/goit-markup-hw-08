@@ -21,25 +21,29 @@
     margin: 15px;
     .employee-image {
         display: block;
-        /* margin-bottom: 30px; */
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
     .employee {
         color: $nav-and-title-color;
-        /* margin-bottom: 10px; */
+        margin-bottom: 10px;
         @extend %position-employee-style;
     }
     .position {
         color: $contacts-paragraph-employee-position-color;
-        padding-bottom: 30px;
+        padding-bottom: 16px;
         @extend %position-employee-style;
     }
 }
 
 .team-items-icons {
-    /*  display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 32px 30px 32px; */
+    max-width: 206px;
+    margin: 0 auto;
+    padding-bottom: 24px;
 }
 
 .team-icon {

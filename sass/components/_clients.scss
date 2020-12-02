@@ -1,24 +1,28 @@
 //CLIENTS
 .clients-block {
-    /* display: flex;
-        justify-content: space-between;
-        margin-bottom: 94px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+    /* margin-bottom: 94px; */
 }
 
 .clients-item {
-    /*   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 90px; */
-    border: $icon-grey-color 1px solid;
-    box-sizing: border-box;
-    border-radius: 4px;
+    width: 210px;
+    height: 90px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     /* margin-right: 30px; */
-    outline: none;
     /* &:last-child {
         margin-right: 0;
     } */
+    border: $icon-grey-color 1px solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
     &:hover,
     &:focus {
         border-color: $blue-text-color;

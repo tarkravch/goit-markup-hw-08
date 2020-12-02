@@ -1,5 +1,9 @@
 //FOOTER
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: $background-dark-color;
     /* padding: 60px 0px 60px 0px;
     display: flex;
@@ -10,6 +14,7 @@
 
 .footer-logo-contacts {
     /* margin-right: 70px; */
+    margin-bottom: 60px;
 }
 
 .logo-bottom a {
@@ -61,12 +66,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-white-color;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .footer-icons {
     /* display: flex;
     margin-right: 93px; */
+    display: flex;
+    margin-bottom: 60px;
 }
 
 .footer-icon-item {
@@ -85,11 +92,14 @@
 }
 
 .subscription-form {
-    /*   display: flex;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .subscription-field {
         /*  width: 358px;
         height: 50px; */
+        width: 450px;
+        height: 50px;
         font-weight: normal;
         font-size: 16px;
         line-height: 20px;
@@ -102,13 +112,15 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         padding-left: 16px;
-        margin-right: 12px;
+        margin-bottom: 20px;
+        /* margin-right: 12px; */
     }
 }
 
 .subscription-btn-block {
     position: relative;
     display: inline-block;
+    margin-bottom: 60px;
 }
 
 .subscription-btn {
