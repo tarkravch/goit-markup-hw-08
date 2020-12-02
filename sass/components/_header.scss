@@ -1,5 +1,4 @@
 .header-block {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,7 +8,7 @@
     .nav-container {
         display: flex;
         align-items: center;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         flex-grow: 1;
         /* margin-right: 305px; */
         .logo-top {
@@ -25,27 +24,40 @@
 }
 
 .menu-button {
-    display: block;
+    display: none;
     border: none;
     background-color: transparent;
-    .burger-icon {
-        display: block;
-    }
-    &:hover,
-    &:focus {
+    &:hover {
         fill: $blue-text-color;
         cursor: pointer;
         outline: none;
     }
+    &:hover .icon-cross {
+        fill: $blue-text-color;
+    }
+    &.is-open {
+        display: block;
+    }
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+.burger-icon {
+    display: block;
+    &:hover .icon-cross {
+        fill: $blue-text-color;
+    }
 }
 
 .menu-container {
-    display: block;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 393px;
+    border-top: 1px solid #ececec;
     background-color: $primary-white-color;
     z-index: 999;
     text-align: center;
@@ -72,13 +84,34 @@
     width: 294px;
     justify-content: space-between;
     @extend %nav-con-style; */
-    .contacts {
-        /* display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+    min-width: 100px;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px auto;
+}
+
+.contacts {
+    /* display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center; */
-        display: block;
-    }
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 .nav-item {
@@ -91,7 +124,7 @@
 
 .current-page {
     position: relative;
-    padding: 32px 0px;
+    padding: 8px 0px;
     display: block;
     &::before {
         position: absolute;
@@ -107,25 +140,31 @@
     }
 }
 
-
-/* .header-mail-phone {
-     display: flex;
-    align-items: center;
-    margin-right: 30px;
-    &:last-child {
+.header-mail-phone {
+    /* display: flex;
+    align-items: center; */
+    /*  margin-right: 30px; */
+    /*  &:last-child {
         margin-right: 0;
-    }
-    @extend %nav-con-style;
-    .contacts-item-gap {
+    } */
+    /* @extend %nav-con-style; */
+    /*  .contacts-item-gap {
         display: flex;
+    } */
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
     }
-} */
+}
 
-
-/* .contacts-item {
+.contacts-item {
     color: $contacts-paragraph-employee-position-color;
     &:hover {
         color: $blue-text-color;
+    }
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0px;
     }
 }
 
@@ -136,4 +175,4 @@
 
 .smartphone-envelope-icon {
     fill: currentColor;
-} */
+}
