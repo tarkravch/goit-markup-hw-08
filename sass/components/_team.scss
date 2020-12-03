@@ -3,11 +3,19 @@
 .team {
     background-color: $background-team-color;
     padding-bottom: 94px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+    }
 }
 
 .team-container {
     /*  display: flex; */
     margin: -15px;
+    @media screen and (min-width: 768px) {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .team-item {
@@ -19,6 +27,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 15px;
+    @media screen and (min-width: 768px) {
+        margin: 0 30px 30px 0;
+        width: calc(100% / 2 - 30px);
+    }
     .employee-image {
         display: block;
         width: 100%;

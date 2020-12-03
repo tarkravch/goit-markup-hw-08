@@ -3,8 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
     margin-bottom: 60px;
     /* margin-bottom: 94px; */
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .clients-item {
@@ -32,6 +37,9 @@
     }
     &:focus .client-image {
         fill: $blue-text-color;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 226px;
     }
 }
 

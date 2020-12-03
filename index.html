@@ -17,7 +17,7 @@
             <div class="header-block">
                 <nav class="nav-container">
                     <div class="logo-top">
-                        <a href="./index.html" lang="en"><span class="bluetext">Web</span>Studio</a>
+                        <a href="./index.html" lang="en"><span class="bluetext" id="studio">Web</span>Studio</a>
                     </div>
                     <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
                         <svg class="burger-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -48,6 +48,30 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="menu-contact-tablet-version">
+                        <ul class="menu">
+                            <li><a class="nav-con-style nav-item bluetext current-page" href="#studio">Студия</a></li>
+                            <li><a class="nav-con-style nav-item" href="./portfolio.html">Портфолио</a></li>
+                            <li><a class="nav-con-style nav-item" href="#contact">Контакты</a></li>
+                        </ul>
+                        <ul class="contacts">
+                            <li class="header-mail-phone">
+                                <a class="nav-con-style contacts-item contacts-item-gap" href="mailto:info@devstudio.com">
+                                    <svg class="smartphone-envelope-icon" width="16" height="12">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-envelope"></use>
+                                    </svg> info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="header-mail-phone">
+                                <a class="nav-con-style contacts-item contacts-item-gap" href="tel:+380991111111">
+                                    <svg class="smartphone-envelope-icon" width="10" height="16">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-smartphone"></use>
+                                    </svg> +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </nav>
             </div>
         </div>
@@ -363,7 +387,7 @@
             <div class="footer-wrapper">
                 <div class="footer-logo-contacts">
                     <div class="logo-bottom">
-                        <a href="#" id="studio" lang="en"><span class="bluetext">Web</span>Studio</a>
+                        <a href="#studio" lang="en"><span class="bluetext">Web</span>Studio</a>
                     </div>
                     <address class="address">
                         <p><a id="contact"></a></p>
@@ -424,6 +448,78 @@
                     </form>
                 </section>
             </div>
+
+            <!-- Tablet footer -->
+
+            <div class="footer-wrapper-tablet">
+                <div class="tablet-footer-contacts">
+                    <div class="footer-logo-contacts">
+                        <div class="logo-bottom">
+                            <a href="#studio" lang="en"><span class="bluetext">Web</span>Studio</a>
+                        </div>
+                        <address class="address">
+                            <p><a id="contact"></a></p>
+                            <ul class="address-list">
+                                <li class="address-item address-style">г. Киев, пр-т Леси Украинки, 26</li>
+                                <li><a class="address-link address-style"
+                                        href="mailto:info@example.com">info@example.com</a>
+                                </li>
+                                <li><a class="address-link address-style" href="tel:+380991111111">+38 099 111 11
+                                        11</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <section class="join">
+                        <p class="join-title">присоединяйтесь</p>
+                        <ul class="footer-icons">
+                            <li>
+                                <a href="https://www.instagram.com" class="footer-icon-item" target="_blank" rel="noopener noreferer">
+                                    <svg class="footer-icon-image" width="20" height="20" aria-label="Instagram">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-instagram-2-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com" class="footer-icon-item" target="_blank" rel="noopener noreferer">
+                                    <svg class="footer-icon-image" width="20" height="17" aria-label="Twitter">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-twitter-1-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" class="footer-icon-item" target="_blank" rel="noopener noreferer">
+                                    <svg class="footer-icon-image" width="20" height="20" aria-label="Facebook">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-facebook-1-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com" class="footer-icon-item" target="_blank" rel="noopener noreferer">
+                                    <svg class="footer-icon-image" width="20" height="20" aria-label="LinkedIn">
+                                        <use href="./img/sprite/symbol-defs.svg#icon-linkedin-1-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <section class="subscription">
+                    <p class="join-title">Подпишитесь на рассылку</p>
+                    <form class="subscription-form" action="#">
+                        <input class="subscription-field" type="email" name="subscription-field" placeholder="Email">
+                        <div class="subscription-btn-block">
+                            <button class="subscription-btn">Подписаться
+                                <svg class="subscription-img">
+                                    <use href="./img/sprite/symbol-defs-form.svg#icon-icon-send" width="24" height="24">
+                                    </use>
+                                </svg></button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+
 
         </div>
     </footer>
