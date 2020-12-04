@@ -15,14 +15,16 @@
 
 .modal {
     position: absolute;
-    /* width: 528px;
-    height: 581px; */
     width: 450px;
     height: 609px;
     background-color: $primary-white-color;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .close-btn {
@@ -57,12 +59,14 @@
         display: block;
         font-weight: bold;
         font-size: 20px;
-        /* line-height: 23px; */
         line-height: 30px;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
         padding: 40px 40px 12px;
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 23px;
     }
     /*  &:focus-within .modal-input-field {
         border-color: $blue-text-color;
@@ -108,7 +112,6 @@
 
 .modal-input-field {
     display: block;
-    /* width: 448px; */
     width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -122,21 +125,19 @@
     &:focus {
         border-color: $blue-text-color;
     }
+    @media screen and (min-width: 1200px) {
+        width: 448px;
+    }
 }
 
 .modal-input-field-comment {
     resize: none;
     display: block;
-    /* width: 448px; */
     width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     font-weight: normal;
-    /* font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.01em;
-    color: #000; */
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.01em;
@@ -146,19 +147,28 @@
     &:focus {
         border-color: $blue-text-color;
     }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        width: 448px;
+        color: #000;
+    }
 }
 
 .terms-accept {
     display: inline-block;
     font-weight: normal;
-    /* font-size: 14px;
-    line-height: 24px; */
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
     padding-left: 30px;
     margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
     .contact-terms {
         text-decoration-line: underline;
         color: #2196f3;
@@ -166,17 +176,18 @@
     .check-box {
         position: absolute;
         display: inline-block;
-        /* width: 20px;
-        height: 20px; */
         width: 16px;
         height: 15px;
         overflow: hidden;
-        /* background-image: url("../img/form-icons/checksquare.svg");
-         */
         background-image: url("../img/form-icons/checksquare-mobile.svg");
         background-repeat: no-repeat;
-        /* transform: translate(-20px, 4px); */
         transform: translate(-20px, -2px);
+        @media screen and (min-width: 1200px) {
+            width: 20px;
+            height: 20px;
+            background-image: url("../img/form-icons/checksquare.svg");
+            transform: translate(-20px, 4px);
+        }
     }
 }
 
@@ -187,7 +198,11 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
     &:checked+.check-box {
-        /* background-image: url("../img/form-icons/icon-check.svg"); */
         background-image: url("../img/form-icons/icon-check-mobile.svg");
+    }
+    @media screen and (min-width: 1200px) {
+        &:checked+.check-box {
+            background-image: url("../img/form-icons/icon-check.svg");
+        }
     }
 }
