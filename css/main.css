@@ -67,13 +67,13 @@ ul {
 
 @media screen and (min-width: 768px) {
   .main-container {
-    min-width: 768px;
+    min-width: 740px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-container {
-    max-width: 1200px;
+    max-width: 1170px;
   }
 }
 
@@ -636,6 +636,7 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 100%;
   }
 }
 
@@ -652,7 +653,7 @@ ul {
 
 .advantage-item {
   display: block;
-  max-width: 100%;
+  max-width: 354px;
   margin: 15px;
 }
 
@@ -662,14 +663,13 @@ ul {
 
 @media screen and (min-width: 768px) {
   .advantage-item {
-    margin: 0 30px 30px 0;
-    width: calc(100% / 2 - 30px);
+    max-width: calc((100%- 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage-item {
-    width: calc(100% / 4 - 30px);
+    width: calc((100%- 30px) / 4);
     margin: 0px 30px 0px 0px;
   }
   .advantage-item:last-child {
@@ -853,7 +853,7 @@ ul {
 @media screen and (min-width: 768px) {
   .team-item {
     margin: 0 30px 30px 0;
-    width: calc(100% / 2 - 30px);
+    max-width: calc((100% - 30px) / 2);
   }
 }
 
@@ -1818,7 +1818,8 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0 30px 30px 0;
-    width: calc(100% / 2 - 30px);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 
@@ -1826,6 +1827,8 @@ ul {
   .project-card {
     margin-right: 30px;
     max-width: 370px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
   .project-card:nth-child(3n) {
     margin-right: 0px;
@@ -1908,6 +1911,12 @@ ul {
   .under-image-text {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .under-image-text {
+    max-height: 110px;
   }
 }
 
