@@ -654,7 +654,7 @@ ul {
 .advantage-item {
   display: block;
   max-width: 354px;
-  margin: 15px;
+  /* margin: 15px; */
 }
 
 .advantage-item:last-child {
@@ -663,13 +663,17 @@ ul {
 
 @media screen and (min-width: 768px) {
   .advantage-item {
-    max-width: calc((100%- 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage-item {
-    width: calc((100%- 30px) / 4);
+    -ms-flex-preferred-size: calc((100% - 30px) / 4);
+        flex-basis: calc((100% - 30px) / 4);
     margin: 0px 30px 0px 0px;
   }
   .advantage-item:last-child {
@@ -958,7 +962,6 @@ ul {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    /* flex-basis: 16.666%; */
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1002,6 +1005,14 @@ ul {
 @media screen and (min-width: 768px) {
   .clients-item {
     max-width: 226px;
+    -ms-flex-preferred-size: calc((100%- 60px) / 3);
+        flex-basis: calc((100%- 60px) / 3);
+  }
+  .clients-item:nth-child(3) {
+    margin-right: 0;
+  }
+  .clients-item:nth-last-child(n + 3) {
+    margin-bottom: 0;
   }
 }
 
