@@ -624,10 +624,6 @@ ul {
   background-color: #ffffff;
 }
 
-.advantage-list-container {
-  margin: -15px;
-}
-
 @media screen and (min-width: 768px) {
   .advantage-list-container {
     margin: 0;
@@ -654,7 +650,6 @@ ul {
 .advantage-item {
   display: block;
   max-width: 354px;
-  /* margin: 15px; */
 }
 
 .advantage-item:last-child {
@@ -678,6 +673,7 @@ ul {
   }
   .advantage-item:last-child {
     margin-bottom: 0px;
+    margin-right: 0;
   }
 }
 
@@ -1676,6 +1672,7 @@ ul {
 }
 
 .portfolio-header-underline {
+  display: block;
   border-bottom: 1px solid #ececec;
 }
 
