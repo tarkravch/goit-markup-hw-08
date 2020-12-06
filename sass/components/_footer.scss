@@ -23,6 +23,7 @@
     }
     @media screen and (min-width: 1200px) {
         display: flex;
+        max-width: 100%;
     }
 }
 
@@ -125,7 +126,7 @@
     display: flex;
     margin-bottom: 60px;
     @media screen and (min-width: 1200px) {
-        margin-right: 93px;
+        margin-right: 83px;
     }
 }
 
@@ -138,6 +139,9 @@
     border-radius: 50%;
     background-color: #44454e;
     margin-right: 10px;
+    /* &:last-child {
+        margin-right: 0px;
+    } */
     &:hover,
     &:focus {
         background-color: $blue-text-color;
