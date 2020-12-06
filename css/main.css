@@ -1283,9 +1283,6 @@ ul {
   border-radius: 50%;
   background-color: #44454e;
   margin-right: 10px;
-  /* &:last-child {
-        margin-right: 0px;
-    } */
 }
 
 .footer-icon-item:hover, .footer-icon-item:focus {
