@@ -73,7 +73,7 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .main-container {
-    max-width: 1170px;
+    max-width: 1200px;
   }
 }
 
@@ -620,7 +620,6 @@ ul {
 
 @media screen and (min-width: 480px) {
   .advantage-list-container {
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -628,6 +627,9 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
     margin-bottom: 60px;
   }
@@ -649,6 +651,9 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1675,7 +1680,7 @@ ul {
   width: 16px;
   height: 15px;
   overflow: hidden;
-  background-image: url("../img/form-icons/checksquare-mobile.svg");
+  background-image: url("../img/icons/form-icons/checksquare-mobile.svg");
   background-repeat: no-repeat;
   -webkit-transform: translate(-20px, -2px);
           transform: translate(-20px, -2px);
@@ -1685,7 +1690,7 @@ ul {
   .terms-accept .check-box {
     width: 20px;
     height: 20px;
-    background-image: url("../img/form-icons/checksquare.svg");
+    background-image: url("../img/icons/form-icons/checksquare.svg");
     -webkit-transform: translate(-20px, 4px);
             transform: translate(-20px, 4px);
   }
@@ -1700,12 +1705,12 @@ ul {
 }
 
 .check-input:checked + .check-box {
-  background-image: url("../img/form-icons/icon-check-mobile.svg");
+  background-image: url("../img/icons/form-icons/icon-check-mobile.svg");
 }
 
 @media screen and (min-width: 1200px) {
   .check-input:checked + .check-box {
-    background-image: url("../img/form-icons/icon-check.svg");
+    background-image: url("../img/icons/form-icons/icon-check.svg");
   }
 }
 
@@ -1817,14 +1822,45 @@ ul {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (min-width: 480px) {
+  .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /* justify-content: center; */
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /* flex-flow: row wrap; */
+    width: 100%;
+    margin-bottom: 60px;
+    /* margin-top: 0;
+        margin-right: auto;
+        margin-left: auto; */
   }
 }
 
@@ -1858,14 +1894,21 @@ ul {
 @media screen and (min-width: 768px) {
   .project-card {
     max-width: 354px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0 30px 30px 0;
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    /* display: flex; */
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    /* margin-bottom: 30px; */
+    /* &:nth-child(2n) {
+            margin-right: 0;
+        } */
+  }
+  .project-card:last-child {
+    margin-bottom: 0;
+    float: left;
+    /* align-self: end; */
+    /*  flex-grow: 0; */
+    /* margin-right: auto;
+            margin-left: 15px; */
   }
 }
 
@@ -1875,6 +1918,9 @@ ul {
     max-width: 370px;
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
+    /*  &:nth-child(2n) {
+            margin-right: 30px;
+        } */
   }
   .project-card:nth-child(3n) {
     margin-right: 0px;

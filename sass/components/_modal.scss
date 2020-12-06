@@ -176,13 +176,13 @@
         width: 16px;
         height: 15px;
         overflow: hidden;
-        background-image: url("../img/form-icons/checksquare-mobile.svg");
+        background-image: url("../img/icons/form-icons/checksquare-mobile.svg");
         background-repeat: no-repeat;
         transform: translate(-20px, -2px);
         @media screen and (min-width: 1200px) {
             width: 20px;
             height: 20px;
-            background-image: url("../img/form-icons/checksquare.svg");
+            background-image: url("../img/icons/form-icons/checksquare.svg");
             transform: translate(-20px, 4px);
         }
     }
@@ -195,11 +195,11 @@
     overflow: hidden;
     clip: rect(0 0 0 0);
     &:checked+.check-box {
-        background-image: url("../img/form-icons/icon-check-mobile.svg");
+        background-image: url("../img/icons/form-icons/icon-check-mobile.svg");
     }
     @media screen and (min-width: 1200px) {
         &:checked+.check-box {
-            background-image: url("../img/form-icons/icon-check.svg");
+            background-image: url("../img/icons/form-icons/icon-check.svg");
         }
     }
 }
