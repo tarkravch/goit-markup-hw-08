@@ -3,7 +3,7 @@
     @media screen and (min-width: 480px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
         width: 100%;
         margin-bottom: 60px;
     }
@@ -20,29 +20,34 @@
 }
 
 .clients-item {
-    @media screen and (min-width: 480px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 210px;
-        height: 90px;
-        flex-basis: calc((100% - 30px) / 2);
-        margin-right: 30px;
-        margin-bottom: 30px;
-        border: $icon-grey-color 1px solid;
-        box-sizing: border-box;
-        border-radius: 4px;
-        outline: none;
-        &:hover,
-        &:focus {
-            border-color: $blue-text-color;
-        }
-        &:hover .client-image {
-            fill: $blue-text-color;
-        }
-        &:focus .client-image {
-            fill: $blue-text-color;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+    /* width: 210px;
+    height: 90px; */
+    /* margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    } */
+    border: $icon-grey-color 1px solid;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    &:hover,
+    &:focus {
+        border-color: $blue-text-color;
+    }
+    &:hover .client-image {
+        fill: $blue-text-color;
+    }
+    &:focus .client-image {
+        fill: $blue-text-color;
     }
     @media screen and (min-width: 768px) {
         max-width: 226px;
